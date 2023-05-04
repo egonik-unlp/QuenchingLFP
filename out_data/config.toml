@@ -1,0 +1,44 @@
+[mof1]
+	[mof1.aire]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 1/Aire"
+		filename = "MOF 1 Air 300 700 nm 40 us Delta OD._1.csv"
+		correccion = 20
+		I = 0.03
+		tau = 1e4
+		ind = 0
+	[mof1.o2]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 1/O2"
+		filename = "MOF 1 O2 300 700 nm 10 us Delta OD._1.csv" 
+		correccion = 50
+		I = 0.0175
+		tau = 1500
+		ind = 0
+	[mof1.argon]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 1/Ar"
+		filename = "MOF 1 PBS Ar 300 700 nm 400us Delta OD 10 disparos._1.csv"
+		correccion = 20
+		I = 0.03
+		tau = 1.5e5
+		ind = 0
+[mof3]
+	[mof3.aire]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 3/Aire"
+		filename = "MOF 3 Air 300 700 nm 40 us Delta OD._1.csv"
+		I = 0.01
+		correccion = 10
+		tau = 0.5e4
+		ind = 0
+	[mof3.o2]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 3/O2"
+		filename = "MOF 3 O2 300 700 nm 10 us Delta OD._1.csv"
+		correccion = 35
+		I = 0.0035
+		tau =  1500
+		ind = 0
+	[mof3.argon]
+		foldername = "/home/gonik/Documents/git/egonik-unlp/QuenchingLFP/out_data/MOF 3/Ar"
+		filename = "MOF 3 PBS Ar 300 700 nm 400us Delta OD 5 disparos._1.csv"
+		correccion = 10
+		I = 0.006
+		tau = 0.5e5
+		ind = 0
