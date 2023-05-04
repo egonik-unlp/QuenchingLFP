@@ -1,8 +1,9 @@
 include("master.jl")
 using .LFPExperiment, StatsBase
-
+const hdir = pwd()
+path = joinpath(hdir,"val")
 if !isdir("val")
-	mkdir("val")
+	mkdir(path)
 end
 experiments = build_experiments("out_data/config.toml")
 
@@ -21,7 +22,7 @@ for multiplier ∈ .1:.1:1.9
 	rexp.ind, rexp.I, rexp.tau = base_params
 	rexp.treatment = "$(rexp.treatment)_val_$multiplier"
 	LFPExperiment.fit(rexp)
-	LFPExperiment.plot(rexp; dir = "val")
+	LFPExperiment.plot(rexp; dir = path)
 	data[multiplier] = rexp.fit.param
 end
 
